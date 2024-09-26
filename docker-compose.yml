@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  node:
+      image: node:20-alpine
+      container_name: ${PROJECT_NAME}_node
+      command: 'sh -c "while true; do sleep 2; done"'
+      working_dir: /app
+      ports: 
+        - "8081:8081"
+      volumes:
+        - ./app:/app
+
+      # build: ./docker/node
+      # logging:
+      #     driver: syslog
+      #     options:
+      #         tag: 'DOCKER/${USER}:${PROJECT_NAME}:node'
+      # volumes:
