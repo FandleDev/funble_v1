@@ -26,11 +26,13 @@ const Footer = () => {
             justifyContent={ 'center' }
             p={ '0!important' }
         >
-            <IconButton aria-label="Message">
-                <Badge color="error" badgeContent={1} max={99}>
-                    <SmsOutlinedIcon/>
-                </Badge>
-            </IconButton>
+            <a href='/chat'>
+                <IconButton aria-label="Message">
+                    <Badge color="error" badgeContent={1} max={99}>
+                        <SmsOutlinedIcon/>
+                    </Badge>
+                </IconButton>
+            </a>
         </Grid>
         <Grid 
             item
@@ -52,9 +54,11 @@ const Footer = () => {
             justifyContent={ 'center' }
             p={ '0!important' }
         >
-            <IconButton aria-label="Favorite">
-                <PersonOutlineIcon/>
-            </IconButton>
+            <a href='/profile'>
+                <IconButton aria-label="Favorite">
+                    <PersonOutlineIcon/>
+                </IconButton>
+            </a>
         </Grid>
     </Grid>
   );

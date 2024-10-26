@@ -10,7 +10,7 @@ import Badge from '@mui/material/Badge';
 import Typography from '@mui/material/Typography';
 import ChatCard from '@/components/ChatCard';
 
-const Chat = () => {
+function Chat() {
   return (
     <Grid container paddingTop={5} width={'100%'} height={1} >
         <Grid item width={'100%'}>
